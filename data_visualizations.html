@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Data Visualizations</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/map.css">
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="scripts/lib/Chart.Core.js"></script>
+	<script src="scripts/lib/Chart.Scatter.js"></script>
+</head>
+<body>
+	<nav class="navbar is-transparent">
+		<div id="navbarExampleTransparentExample" class="navbar-menu">
+			<div class="navbar-start">
+				<a class="navbar-item" href="index.html">
+					&#65513; Back
+				</a>
+			</div>
+		</div>
+	</nav>
+	<section class="hero is-primary">
+		<div class="hero-body">
+			<div class="container has-text-centered">
+				<h1 class="title">
+					Data Visualizations
+				</h1>
+				<h2 class="subtitle">
+					Graph all the things! 📈
+				</h2>
+			</div>
+		</div>
+	</section>
+
+
+	<div class="content-block">
+		<section class="hero">
+			<div class="hero-body">
+				<div class="container">
+					<div class="content">
+						<div class="columns" style = "margin-bottom: -40%">
+							<div class="column is-one-half is-centered is-text-centered">
+								<h4 class="title is-4 is-spaced">Most Popular Stations: Heat Maps</h4>
+								<p><strong>Where are the "hottest" areas during the <a href = "heatmaps/heatmapAll.html">year?</a></strong></p>
+								<p><strong>Where are the "hottest" areas during the <a href = "heatmaps/heatmapWinter.html">winter?</a></strong></p>
+								<p><strong>Where are the "hottest" areas during the <a href = "heatmaps/heatmapSpring.html">spring?</a></strong></p>
+								<p><strong>Where are the "hottest" areas during the <a href = "heatmaps/heatmapSpring.html">summer?</a></strong></p>
+								<p><strong>Where are the "hottest" areas during the <a href = "heatmaps/heatmapFall.html">fall?</a></strong></p>
+								<div id="density-map"></div>
+								
+							</div>
+							<div class="column is-one-half is-centered is-text-centered">
+								<h4 class="title is-4">Popular Passes</h4>
+								<p><strong>What are the most popular passes <a href = "commuterPieGraph.html">yearly and seasonaly?</a></strong></p>
+								<div id="reviews-map"></div>
+							</div>
+							<div class="column is-one-half is-centered is-text-centered">
+									<h4 class="title is-4">Starting Stations</h4>
+									<p><strong>Top 10 Starting Stations: <a href = "barChart/barChartSS.html">Yearly</a> with <a href = "pinPoints/pinPointYearly.html">pin points</a></strong></p>
+									<p><strong>Top 10 Starting Stations: <a href = "barChart/barChartSS.html">Winter</a> with <a href = "pinPoints/pinPointWinter.html">pin points</a></strong></p>
+									<p><strong>Top 10 Starting Stations: <a href = "barChart/barChartSS.html">Spring</a> with <a href = "pinPoints/pinPointSpring.html">pin points</a></strong></p>
+									<p><strong>Top 10 Starting Stations: <a href = "barChart/barChartSS.html">Summer</a> with <a href = "pinPoints/pinPointSummer.html">pin points</a></strong></p>
+									<p><strong>Top 10 Starting Stations: <a href = "barChart/barChartSS.html">Fall</a> with <a href = "pinPoints/pinPointFall.html">pin points</a></strong></p>
+									<div id="reviews-map"></div>
+								</div>
+						</div>
+						<div class="columns" >
+								<div class="column is-one-half is-centered is-text-centered">
+									<h4 class="title is-4">Ending Stations</h4>
+									<p><strong>Top 10 Ending Stations: <a href = "barChart/barChartES.html">Yearly</a> with <a href = "pinPoints/pinPointES.html">pin points</a></strong></p>
+									<p><strong>Top 10 Ending Stations: <a href = "barChart/barChartES.html">Winter</a> with <a href = "pinPoints/pinPointWinterES.html">pin points</a></strong></p>
+									<p><strong>Top 10 Ending Stations: <a href = "barChart/barChartES.html">Spring</a> with <a href = "pinPoints/pinPointSpringES.html">pin points</a></strong></p>
+									<p><strong>Top 10 Ending Stations: <a href = "barChart/barChartES.html">Summer</a> with <a href = "pinPoints/pinPointSummerES.html">pin points</a></strong></p>
+									<p><strong>Top 10 Ending Stations: <a href = "barChart/barChartES.html">Fall</a> with <a href = "pinPoints/pinPointFallES.html">pin points</a></strong></p>
+									<div id="reviews-map"></div>
+								</div>
+								<div class="column is-one-half is-centered is-text-centered">
+									<h4 class="title is-4">Time and Distance</h4>
+									<p><strong>What is the average <a href = "averages/averageTime.html">time</a> and <a href = "averages/averageDistance.html">distance </a>yearly and seasonly? 🤔</strong></p>
+									<div id="reviews-map"></div>
+								</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</section>
+		<hr/>
+	</div>
+</body>
+</html>

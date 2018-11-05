@@ -1,0 +1,163 @@
+<!DOCTYPE HTML>
+<html>
+<head>  
+<script>
+window.onload = function () {
+
+var yearChart = new CanvasJS.Chart("yearChartContainer", {
+	animationEnabled: true,
+	theme: "light2", // "light1", "light2", "dark1", "dark2"
+	title:{
+		text: "Top 10 Ending Stations: Yearly"
+	},
+	axisY: {
+		title: "Number of People"
+	},
+	data: [{        
+		type: "column",  
+		dataPoints: [      
+			{ y: 6262, label: "3005" },
+			{ y: 5517,  label: "3031" },
+			{ y: 5385,  label: "3014" },
+			{ y: 5293,  label: "3042" },
+			{ y: 5072,  label: "3069" },
+			{ y: 4703, label: "3082" },
+			{ y: 4605,  label: "3064" },
+			{ y: 4337,  label: "3022" }, 
+            { y: 4224,  label: "3030" }, 
+            { y: 3763,  label: "3063" }
+		]
+	}]
+});
+
+var winterChart = new CanvasJS.Chart("winterChartContainer", {
+	animationEnabled: true,
+	theme: "light2", // "light1", "light2", "dark1", "dark2"
+	title:{
+		text: "Top 10 Ending Stations: Winter"
+	},
+	axisY: {
+		title: "Number of People"
+	},
+	data: [{        
+		type: "column",  
+		dataPoints: [      
+			{ y: 1595, label: "3082" },
+			{ y: 1545,  label: "3005" },
+			{ y: 1357,  label: "3042" },
+			{ y: 1323,  label: "3069" },
+			{ y: 1307,  label: "3031" },
+			{ y: 1173, label: "3014" },
+			{ y: 1115,  label: "3063" },
+			{ y: 1107,  label: "3022" }, 
+            { y: 1090,  label: "3064" }, 
+            { y: 878,  label: "3030" }
+		]
+	}]
+});
+
+var springChart = new CanvasJS.Chart("springChartContainer", {
+	animationEnabled: true,
+	theme: "light2", // "light1", "light2", "dark1", "dark2"
+	title:{
+		text: "Top 10 Ending Stations: Spring"
+	},
+	axisY: {
+		title: "Number of People"
+	},
+	data: [{        
+		type: "column",  
+		dataPoints: [      
+			{ y: 237, label: "3005" },
+			{ y: 223,  label: "3082" },
+			{ y: 216,  label: "3014" },
+			{ y: 201,  label: "3069" },
+			{ y: 194,  label: "3042" },
+			{ y: 169, label: "3022" },
+			{ y: 168,  label: "3063" },
+			{ y: 157,  label: "3064" }, 
+            { y: 154,  label: "3031" }, 
+            { y: 142,  label: "3067" }
+		]
+	}]
+});
+
+var summerChart = new CanvasJS.Chart("summerChartContainer", {
+	animationEnabled: true,
+	theme: "light2", // "light1", "light2", "dark1", "dark2"
+	title:{
+		text: "Top 10 Ending Stations: Summer"
+	},
+	axisY: {
+		title: "Number of People"
+	},
+	data: [{        
+		type: "column",  
+		dataPoints: [      
+			{ y: 2215, label: "3014" },
+			{ y: 2174,  label: "3005" },
+			{ y: 2092,  label: "3031" },
+			{ y: 2051,  label: "3042" },
+			{ y: 1861,  label: "3069" },
+			{ y: 1801, label: "3030" },
+			{ y: 1641,  label: "3064" },
+			{ y: 1581,  label: "3022" }, 
+            { y: 1490,  label: "3021" }, 
+            { y: 1433,  label: "3067" }
+		]
+	}]
+});
+
+var fallChart = new CanvasJS.Chart("fallChartContainer", {
+	animationEnabled: true,
+	theme: "light2", // "light1", "light2", "dark1", "dark2"
+	title:{
+		text: "Top 10 Ending Stations: Fall"
+	},
+	axisY: {
+		title: "Number of People"
+	},
+	data: [{        
+		type: "column",  
+		dataPoints: [      
+			{ y: 2306, label: "3005" },
+			{ y: 2164,  label: "3082" },
+			{ y: 1964,  label: "3031" },
+			{ y: 1781,  label: "3014" },
+			{ y: 1717,  label: "3064" },
+			{ y: 1691, label: "3042" },
+			{ y: 1687,  label: "3069" },
+			{ y: 1480,  label: "3022" }, 
+            { y: 1408,  label: "3030" }, 
+            { y: 1214,  label: "3067" }
+		]
+	}]
+});
+
+yearChart.render();
+winterChart.render();
+springChart.render();
+summerChart.render();
+fallChart.render();
+
+}
+</script>
+</head>
+<body>
+		<nav class="navbar is-transparent">
+				<div id="navbarExampleTransparentExample" class="navbar-menu">
+					<div class="navbar-start">
+						<a class="navbar-item" href="../data_visualizations.html">
+							&#65513; Back
+						</a>
+					</div>
+				</div>
+			</nav>
+<div id="yearChartContainer" style="height: 300px; width: 100%;"></div>
+<div id="winterChartContainer" style="height: 300px; width: 100%; padding-top:10%"></div>
+<div id="springChartContainer" style="height: 300px; width: 100%; padding-top:10%"></div>
+<div id="summerChartContainer" style="height: 300px; width: 100%; padding-top:10%"></div>
+<div id="fallChartContainer" style="height: 300px; width: 100%; padding-top:10%"></div>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</body>
+</html>
